@@ -59,7 +59,7 @@ MELCOW_IMG = environ.get('MELCOW_IMG',"https://telegra.ph/file/67a238112341dc2da
 MELCOW_VID = environ.get('MELCOW_VID',"https://telegra.ph/file/c3d0547a2cbd37abfe04b.mp4")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6216705387').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -91,7 +91,7 @@ MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/sakura_movies_1")
 FILE_FORWARD = environ.get('FILE_FORWARD',"")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', ''))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002055727512'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'amal_nath_05')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "False")), False)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
