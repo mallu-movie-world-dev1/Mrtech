@@ -86,7 +86,7 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 # Others
 PORT = os.environ.get("PORT", "8080")
 MAX_BTN = int(environ.get('MAX_BTN', "10"))
-S_GROUP = environ.get('S_GROUP',"https://t.me/+aggoJ993G4g4YTI9")
+S_GROUP = environ.get('S_GROUP',"https://t.me/MRSUPPORTCHANNEL")
 MAIN_CHANNEL = environ.get('MAIN_CHANNEL',"https://t.me/MM_4KFLIXMT")
 FILE_FORWARD = environ.get('FILE_FORWARD',"-1002055662169")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
