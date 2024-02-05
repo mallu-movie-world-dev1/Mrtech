@@ -44,7 +44,7 @@ class evamaria(Client):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(os.environ.get('API_ID', '25880697'))
 API_HASH = os.environ.get('API_HASH', 'ccbeeaf507caf64c00ec327407faa7a2')
-BOT_TOKEN = os.environ.get('BOT_TOKEN', '6751025808:AAHGPpyoa917FuspiYud29xgH-3Dpo0uydg')
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '6751025808:AAEiA1jqQ5YI0GEeLOiKscMcXNzueYxsi8E')
 
 
 # Bot settings
@@ -92,7 +92,7 @@ FILE_FORWARD = environ.get('FILE_FORWARD',"-1002055662169")
 MSG_ALRT = environ.get('MSG_ALRT', '𝑪𝑯𝑬𝑪𝑲 & 𝑻𝑹𝒀 𝑨𝑳𝑳 𝑴𝒀 𝑭𝑬𝑨𝑻𝑼𝑹𝑬𝑺')
 FILE_CHANNEL = int(environ.get('FILE_CHANNEL', '-1002055662169'))
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002119972672'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '@MM_4KFLIXTK')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'amal_nath_05')
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
