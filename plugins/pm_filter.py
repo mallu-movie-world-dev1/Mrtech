@@ -884,6 +884,11 @@ async def auto_filter(client, msg, spoll=False):
                 await asyncio.sleep(600)
                 await pic_fil.delete()
                 await message.delete()
+                fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
+                await asyncio.sleep(600)
+                await fcu.delete()
+                await message.delete()
+                
         except Exception as e:
             logger.exception(e)
             no_pic=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
@@ -891,11 +896,19 @@ async def auto_filter(client, msg, spoll=False):
                 await asyncio.sleep(600)
                 await no_pic.delete()
                 await message.delete()
+                fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
+                await asyncio.sleep(600)
+                await fcu.delete()
+                await message.delete()
     else:
         no_fil=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         if settings["auto_delete"]:
             await asyncio.sleep(600)
             await no_fil.delete()
+            await message.delete()
+            fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
+            await asyncio.sleep(600)
+            await fcu.delete()
             await message.delete()
     if spoll:
         await msg.message.delete()
