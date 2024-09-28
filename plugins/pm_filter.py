@@ -867,7 +867,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b><i>𝙃𝙚𝙧𝙚 𝙞𝙨 𝙬𝙝𝙖𝙩 𝙞𝙨 𝙛𝙤𝙪𝙣𝙙 𝙮𝙤𝙪𝙧 𝙦𝙪𝙚𝙧𝙮:\n {search}\n👤𝙍𝙚𝙦𝙪𝙚𝙨𝙩𝙚𝙙 𝘽𝙮 : {message.from_user.mention}\n👥𝙂𝙧𝙤𝙪𝙥 : {message.chat.title}</i></b>"
+        cap = f"<b>Hey {message.from_user.mention} 👋\n\n𝖥𝗂𝗅𝗆 :  {search}\n𝖱𝖾𝗌𝗎𝗅𝗍𝗌 : {str(total_results)}\nᴘʀᴏᴠɪᴅᴇ ʙʏ {message.chat.title} 🎭\n</b>"
     if imdb and imdb.get('poster'):
         try:
             pic_fi=await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -884,7 +884,7 @@ async def auto_filter(client, msg, spoll=False):
                 await asyncio.sleep(600)
                 await pic_fil.delete()
                 await message.delete()
-                fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
+                fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n<i>(Due To Avoid Copyrights Issue😌)</i>\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
                 await asyncio.sleep(600)
                 await fcu.delete()
                 await message.delete()                
@@ -895,7 +895,7 @@ async def auto_filter(client, msg, spoll=False):
                 await asyncio.sleep(600)
                 await no_pic.delete()
                 await message.delete()
-                fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
+                fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n<i>(Due To Avoid Copyrights Issue😌)</i>\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
                 await asyncio.sleep(600)
                 await fcu.delete()
                 await message.delete()
@@ -905,7 +905,7 @@ async def auto_filter(client, msg, spoll=False):
             await asyncio.sleep(600)
             await no_fil.delete()
             await message.delete()
-            fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n(Due To Avoid Copyrights Issue😌)\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
+            fcu = await message.reply(f"<b>Hey {message.from_user.mention} \n\nYour Request Has Been Deleted 👍 \n<i>(Due To Avoid Copyrights Issue😌)</i>\n\nIF YOU WANT THAT FILE, REQUEST AGAIN ❤️</b>")
             await asyncio.sleep(600)
             await fcu.delete()
             await message.delete()
